@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  
-  <title>Calculator app</title>
-
+  <title>Kalkulator</title>
 </head>
 <body>
+
   <div class="calculator">
-    <div class="row1">
-      <input type="text" class="calculator-screen" value="" disabled />
-      <button id="+">+</button>
+    <div class="screen-container">
+      <input type="text" class="calculator-screen" id="placeholder" value="0" disabled />
     </div>
 
-    <div class="row2">
-      <button id="1">1</button>
-      <button id="2">2</button>
-      <button id="3">3</button>
-      <button id="-">-</button>
-    </div>
+    <div class="buttons-grid">
+      <button class="btn btn-clear" id="clear">C</button>
+      <button class="btn btn-operator" id="/">&divide;</button>
+      <button class="btn btn-operator" id="*">&times;</button>
+      <button class="btn btn-operator" id="-">&minus;</button>
 
-    <div class-="row3">
-      <button id="4">4</button>
-      <button id="5">5</button>
-      <button id="6">6</button>
-      <button id="*">+</button>
+      <button class="btn" id="7">7</button>
+      <button class="btn" id="8">8</button>
+      <button class="btn" id="9">9</button>
+      <button class="btn btn-operator" id="+">+</button>
+
+      <button class="btn" id="4">4</button>
+      <button class="btn" id="5">5</button>
+      <button class="btn" id="6">6</button>
+      <button class="btn btn-equal" id="=">=</button>
+
+      <button class="btn" id="1">1</button>
+      <button class="btn" id="2">2</button>
+      <button class="btn" id="3">3</button>
+
+      <button class="btn btn-zero" id="0">0</button>
+      <button class="btn btn-operator" id=".">.</button>
     </div>
-    <div class-="row4">
-      <button id="7">7</button>
-      <button id="8">8</button>
-      <button id="9">9</button>
-      <button id="/">/</button>
-    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
